@@ -4,7 +4,7 @@
 
 int main (void)
 {
-    string filmCategorieEnfant[3] = {"filmEnfant1", "filmEnfant2", "filmEnfant3"};
+    string filmCategorieEnfant[3] = {"filmEnfant1", "filmEnfant2", "filmEnfant3"}; //
     string filmCategorieAdos[3] = {"filmAdo1", "filmAdo2", "filmAdo3"};
     string filmCategorieAdulte[3] = {"filmAdulte1", "filmAdulte2", "filmAdulte3"};
 
@@ -28,7 +28,7 @@ int main (void)
         }
     }
 
-    //
+    //Ci dessous ce trouve la boucle qui s'occupe de demander le choix du film
 
     for(int j = 0; j < 3; j++)
     {
@@ -46,15 +46,10 @@ int main (void)
 
             }
         }
-    }
 
-    //
-
-    for(int z = 0; z < 3; z++)
-    {
         if (age > 11 && age < 18)
         {
-            char isOkWith = get_char("Le film %s vous intéresse ?\n", filmCategorieAdos[z]);
+            char isOkWith = get_char("Le film %s vous intéresse ?\n", filmCategorieAdos[j]);
 
             if(isOkWith == 'Y' || isOkWith == 'y')
             {
@@ -67,15 +62,9 @@ int main (void)
             }
         }
 
-    }
-
-    //
-
-    for(int x = 0; x < 3; x++)
-    {
         if (age >= 18)
         {
-            char isOkWith = get_char("Le film %s vous intéresse ?\n", filmCategorieAdulte[x]);
+            char isOkWith = get_char("Le film %s vous intéresse ?\n", filmCategorieAdulte[j]);
 
             if(isOkWith == 'Y' || isOkWith == 'y')
             {
@@ -87,7 +76,5 @@ int main (void)
 
             }
         }
-
     }
-
 }
