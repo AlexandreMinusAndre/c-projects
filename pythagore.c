@@ -6,7 +6,7 @@ void pythagore(int *x, int *y);
 int main(void)
 {
     //énoncé du problème
-    printf("On a un triangle rectangle ABC, avec : \n-AC comme côté adjacent.\n-BC comme côté opposé.\n-AB comme hypothénuse.\nOn utilise le théorème de pythagore pour calculer l'hypthénuse AB : \n");
+    printf("On a un triangle rectangle ABC, avec : \n-AC comme côté adjacent.\n-BC comme côté opposé.\n-AB comme hypothénuse.\nOn utilise le théorème de pythagore pour calculer la longueur de hypthénuse AB en cm: \n");
 
     //On demande à l'utilisateur la valeur de AC en cm
     int AC;
@@ -26,8 +26,8 @@ int main(void)
 void pythagore(int *x, int *y)
 {
     float somme = pow(*x, 2) + pow(*y, 2);
-    //Ici, pow sert à mettre les valeurs de AC et BC au carré. On additionne ensuite ces valeurs
+    //pow fait parti de la librairie math.h, celà sert à mettre les valeurs de AC et BC au carré. On additionne ensuite ces valeurs
 
     printf("D'après le théorème de pythagore, l'hypthénuse AB = %.2f cm\n", sqrt(somme));
-    //sqrt permet d'obtenir la racine carrée. Ici, on imprime la racine carrée de la variable somme pour obtenir la valeur de l'hypothénuse en cm.
+    //sqrt fait parti de la librairie math.h, celà permet d'obtenir la racine carrée. Ici, on imprime la racine carrée de la variable somme pour obtenir la valeur de l'hypothénuse en cm.
 }
