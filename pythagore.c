@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+#include <math.h> //La librairie math.h permet d'utiliser plusieurs fonctions mathématiques (utiles pour ce programme)
 
 void pythagore(int *x, int *y);
 
