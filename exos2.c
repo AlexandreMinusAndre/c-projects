@@ -22,8 +22,8 @@ int main(void)
     printf("x is now %i and y is now %i\n", x, y);
 }
 
-//La fonction swap s'occupe d'interchanger les valeurs des variables grâce à une variable temporaire (tmp) qui contiendra temporairement la valeur de a
-void swap(int *a, int *b)
+//La fonction swap s'occupe d'interchanger les valeurs des variables grâce à une variable temporaire (tmp) qui contiendra temporairement la valeur de x
+void swap(int *a, int *b) //*a et *b font référence à x et y
 {
     int tmp = *a;
     *a = *b;
